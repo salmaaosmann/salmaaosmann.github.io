@@ -1,0 +1,139 @@
+.main{
+	opacity: 100%;
+	display: flex;
+	width: 100%;
+	background:grey;
+	background-position: center;
+	background-size: cover;
+	height: 200px;
+}
+:root{  --primary-color:#fff;
+	--secondary-color:#000000;
+	--third-color:#7a4214;
+}
+.dark-theme{
+	--primary-color:#000000;
+	--secondary-color:#fff;
+
+}
+body{
+    color: var(--secondary-color);	
+	margin: 0;
+	padding: 0;
+	background: var(--primary-color);
+}
+.logo{
+	float: left;
+	color: white;
+	font-size: 100px;
+	font-family:monospace;
+	display: flex;  
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#icon{width: 30px;
+  height: 30px;
+cursor: pointer;
+margin-right: 0;
+}
+.menu{
+	float: left;
+	height: 70px;
+}
+
+ul{
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul li{
+	padding-left: 15px;
+	display: flex;
+	list-style: none;
+	margin-left: 62px;
+	margin-top: 27px;
+	font-size: 14px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: Arial;
+	font-weight: bold;
+	transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+	color: #ff7200;
+}
+.end{
+	font-family: Arial;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	background: grey;
+	height:auto;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.end a{
+	text-decoration: none;
+	color: #fff;
+	font-family: Arial;
+	font-weight: bold;
+}
+.ULfooter{
+	color: white;
+	background: grey;
+	height:auto;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 50px;
+padding-bottom: 100px;;
+text-align: center;
+}
+img {
+height: 250px;
+width: auto;
+margin-right: 40px;
+margin-left: 40px;
+position: relative;
+overflow: hidden;
+}
+.begin{
+margin-top: 100px;
+font-size: larger;
+}
+.link{
+	color: black;
+	position: relative;
+	width: 100%;
+	background-color: darkgrey;
+	transition: all 0.2s ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+	text-align: center;
+}
+.shop:hover .L1,
+.shop:hover .L2,
+.shop:hover .L3,
+.shop:hover .L4,
+.shop:hover .L5 {
+	bottom: 120px;
+	opacity: 1;
+	padding: 10px;
+	text-decoration: none;
+}

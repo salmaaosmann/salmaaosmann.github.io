@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinemas</title>
+<link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/uploads/popcorn-png-3.png">
+<link rel="stylesheet" href="mystyles.css">
+    </head>
+    <div class="main">
+       <h2 class="logo">Echo</h2>
+    <div class="menu">
+       <ul class="headUL">
+   <li><img src="moon.png" class="Llogo" id="icon"></li>
+       <li><a href="index.html">HOME</a></li>
+       <li><a href="dining.html">dining</a></li>
+       <li><a href="cinema.html">cinema</a></li>
+       <li><a href="shops.html">shops</a></li>
+       <li><a href="entertainment.html">entertainment</a></li>
+       <li><a href="orders.html">orders</a></li>
+       <li><a href="offers.html">offers</a></li>
+       <li><a href="spa.htm">Spa</a></li>
+       <li><a href="events.html">events</a></li>
+       </ul>
+       </div>
+    </div>
+<body>
+    <div class="stick">
+    <div class="header" id="myHeader">
+ <h1 style="text-align:center"> Our Cinemas</h1>
+ <h2 style="text-align:center"> experience of a life time </h2>
+ </div>
+    </div>
+ <!--the slider-->
+   <div class="container">
+       
+     <div class="mySlides fade">
+       <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%">
+     </div>
+   
+     <div class="mySlides fade">
+       <img src="https://www.indiewire.com/wp-content/uploads/2020/08/China-Movie-Theater.jpg?w=780" style="width:100%">
+     </div>
+   
+     <div class="mySlides fade">
+       <img src="https://images.pexels.com/photos/7991159/pexels-photo-7991159.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load" style="width:100%">
+     </div>
+   <div class="mySlides fade">
+       <img src="https://images.pexels.com/photos/8263326/pexels-photo-8263326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="width:100%">
+   </div>
+   </div>
+       
+   <script>
+   let slideIndex = 0;
+   showSlides();
+   function showSlides() {
+     let i;
+     let slides = document.getElementsByClassName("mySlides");
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none"; 
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {slideIndex = 1} 
+     slides[slideIndex-1].style.display = "block"; 
+     setTimeout(showSlides, 2000); // Change image every 2 seconds
+   }
+    </script>
+    
+    <div>
+   <h4 class="white">
+   Now streaming movies!
+      </h4>
+    </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h3>Spider Man: No way Home</h3>
+              <p>
+                  <a title=" click for more info about the movie" href="https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home"target="_blank">
+                  <img class="massage" src="https://assets.voxcinemas.com/posters/P_HO00008731.jpg" width="60%">
+                  </a>
+              </p>
+              <p><b>cast:</b> Tom Holland, Zendaya, and Benedict Cumberbatch  </p>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <h3>Thor: Ragnarok</h3>
+              <p>
+                  <a title=" click for more info about the movie" href="https://en.wikipedia.org/wiki/Thor:_Ragnarok"target="_blank">
+                  <img class="massage" src="https://upload.wikimedia.org/wikipedia/en/7/7d/Thor_Ragnarok_poster.jpg" width="60%">
+                  </a>
+              </p>
+              <p><b>cast:</b> Chris Hemsworth, Tom Hiddleston, and Mark Ruffalo  </p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <h3>Dr strange</h3>
+              <p>
+                  <a title=" click for more info about the movie"href="https://en.wikipedia.org/wiki/Doctor_Strange_in_the_Multiverse_of_Madness "target="_blank">
+                  <img class="massage" src="https://upload.wikimedia.org/wikipedia/en/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg" width="60%">
+                  </a>
+              </p>
+              <p><b>cast:</b> Benedict Cumberbatch, Elizabeth Olsen, and Rachel McAdams </p>
+            </div>
+          </div>
+          <div class="column">
+              <div class="card">
+                <h3>Black Widow</h3>
+                <p>
+                    <a title=" click for more info about the movie" href="https://en.wikipedia.org/wiki/Black_Widow_(2021_film)"target="_blank">
+                    <img class="massage" src="https://upload.wikimedia.org/wikipedia/en/e/e9/Black_Widow_%282021_film%29_poster.jpg" width="60%">
+                    </a>
+                </p>
+                <p><b>cast:</b> Scarlett Johansson, Pugh Florence, and David Harbour </p>
+              </div>
+            </div>
+        </div>
+        <div>
+           <h4 class="white">
+           Wanna book a ticket ? check our seatings!
+              </h4>
+            </div>
+                  <div class="movies_list">
+             <label class="cond">Select a movie : </label>
+              <select id="movie">
+              <option class="h3">Spider Man: No way Home</option>
+                <option class="h3">Thor: Ragnarok</option>
+                <option class="h3">Dr Strange</option>
+                <option class="h3">Black Widow</option>
+          </select>
+            </div>
+            <div class="body">
+                <ul class="myUL">
+                  <li>
+                    <div class="seat"></div>
+                    <p class="cond"> Available</p>
+                  </li>
+                  <li>
+                    <div class="seat taken"></div>
+                 <p class="cond"> taken</p>
+                  </li>
+                </ul>
+            <div class="seating">
+              <div style="text-align:center" class="screen">screen</div>
+                <div class="Seat_row">
+                    <ul class="myUL">
+                       <li title="A1"> <div class="seat"></div></li>
+                       <li title="A2"> <div class="seat"></div></li>
+                       <li title="A3"> <div class="seat"></div></li>
+                       <li title="A4"> <div class="seat"></div></li>
+                       <li title="A5"> <div class="seat taken"></div></li>
+                       <li title="A6"> <div class="seat taken"></div></li>
+                       <li title="A7"> <div class="seat"></div></li>
+                       <li title="A8"> <div class="seat"></div></li>
+                       <li title="A9"> <div class="seat taken"> </div></li>
+                       <li title="A10"> <div class="seat"></div></li>
+                          </ul>
+                  </div>
+              <div class="Seat_row">
+                <ul class="myUL">
+                   <li title="B1"> <div class="seat"></div></li>
+                   <li title="B2"> <div class="seat"></div></li>
+                   <li title="B3"> <div class="seat taken"></div></li>
+                   <li title="B4"> <div class="seat taken"></div></li>
+                   <li title="B5"> <div class="seat"></div></li>
+                   <li title="B6"> <div class="seat"></div></li>
+                   <li title="B7"> <div class="seat"></div></li>
+                   <li title="B8"> <div class="seat"></div></li>
+                   <li title="B9"> <div class="seat taken"></div></li>
+                   <li title="B10"> <div class="seat"></div></li>
+                      </ul>
+              </div>
+            
+              <div class="Seat_row">
+                  <ul>
+                     <li title="C1"> <div class="seat taken"></div></li>
+                     <li title="C2"> <div class="seat"></div></li>
+                     <li title="C3"> <div class="seat"></div></li>
+                     <li title="C4"> <div class="seat"></div></li>
+                     <li title="C5"> <div class="seat"></div></li>
+                     <li title="C6"> <div class="seat"></div></li>
+                     <li title="C7"> <div class="seat"></div></li>
+                     <li title="C8"> <div class="seat"></div></li>
+                     <li title="C9"> <div class="seat"></div></li>
+                     <li title="C10"> <div class="seat taken"></div></li>
+                        </ul>
+                </div>
+            
+             <div class="Seat_row">
+               <ul>
+                  <li title="D1"> <div class="seat taken"></div></li>
+                  <li title="D2"> <div class="seat"></div></li>
+                  <li title="D3"> <div class="seat"></div></li>
+                  <li title="D4"> <div class="seat"></div></li>
+                  <li title="D5"> <div class="seat"></div></li>
+                  <li title="D6"> <div class="seat"></div></li>
+                  <li title="D7"> <div class="seat"></div></li>
+                  <li title="D8"> <div class="seat"></div></li>
+                  <li title="D9"> <div class="seat"></div></li>
+                  <li title="D10"> <div class="seat"></div></li>
+                     </ul>
+             </div>
+            </div>
+            </div>
+            <form >
+              <label class="lab cond"for="fseat">Enter the number of the seat you'd like</label><br>
+              <input type="text" id="fseat" name="seat" value="example: C4">
+              <input type="submit" value="Send">
+            </form> 
+            <br>
+            <div class="end">
+            Thanks for checking out website, can't wait to see you<br>
+            for more info visit us at : <a href="EchoMall@gmail.com"> Echomall@gmail.com</a>
+            </div>
+                  <ul class="ULfooter">
+                     <li class="LIfooter"><a href="support.html">support</a></li>
+                     <li class="LIfooter"><a href="Q&A.html">Q&A</a></li>
+                         <li class="LIfooter"><a href="aboutus.html">about us</a></li>
+                     <li class="LIfooter"><a href="mallmap.html">mall map</a></li>
+                  </ul>
+                  <script>
+                     var icon = document.getElementById("icon");
+                     icon.onclick=function(){
+                       document.body.classList.toggle("dark-theme");
+                       if(document.body.classList.contains("dark-theme")){
+                         icon.src="sun.png";
+                       }else{
+                         icon.src="moon.png";
+                       }
+                     }
+                  </script>            
+</body>
+</html>
+
